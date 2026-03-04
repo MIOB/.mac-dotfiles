@@ -66,14 +66,14 @@ bindkey -M vicmd v edit-command-line
 #######
 # FZF #
 #######
-if [[ $(command -v "fzf") ]]; then
-    source <(fzf --zsh)
+if command -v "fzf" >/dev/null 2>&1; then
+  source <(fzf --zsh)
 fi
 
 ##########
 # ZOXIDE #
 ##########
-if [[ $(command -v "zoxide") ]]; then
+if command -v "zoxide" >/dev/null 2>&1; then
   eval "$(zoxide init zsh)"
 fi
 

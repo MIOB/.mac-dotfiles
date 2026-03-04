@@ -7,3 +7,8 @@ readonly XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-${HOME}/.config}"
 readonly XDG_DATA_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}"
 readonly XDG_STATE_HOME="${XDG_STATE_HOME:-${HOME}/.local/state}"
 
+#######
+# zsh #
+#######
+mkdir -p "${XDG_CONFIG_HOME}/zsh" "${XDG_STATE_HOME}/zsh"
+ln -sf "${DOTFILES}/zsh/.zshenv" "${HOME}"

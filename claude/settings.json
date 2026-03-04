@@ -4,7 +4,6 @@
     "pr": ""
   },
   "permissions": {
-    "defaultMode": "default",
     "allow": [
       "mcp__jetbrains__create_new_file",
       "mcp__jetbrains__find_files_by_glob",
@@ -28,11 +27,15 @@
       "mcp__jetbrains__read_file",
       "mcp__jetbrains__search_text",
       "mcp__jetbrains__search_file"
-    ]
+    ],
+    "defaultMode": "default"
   },
   "model": "opus",
   "statusLine": {
     "type": "command",
     "command": "~/.mac-dotfiles/claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "context7@claude-plugins-official": true
   }
 }

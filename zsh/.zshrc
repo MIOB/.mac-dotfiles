@@ -2,6 +2,13 @@ fpath=("/opt/homebrew/share/zsh/site-functions" "${ZDOTDIR}/external" $fpath)
 
 source "${XDG_CONFIG_HOME}/zsh/aliases.zsh"
 
+function () {
+  local file
+  for file in "${XDG_CONFIG_HOME}/zsh/configs/"*.zsh; do
+    source "${file}"
+  done
+}
+
 #######################
 # SYNTAX HIGHLIGHTING #
 #######################

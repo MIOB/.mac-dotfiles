@@ -15,6 +15,8 @@ mkdir -p "${XDG_CONFIG_HOME}/zsh" "${XDG_STATE_HOME}/zsh" "${XDG_CACHE_HOME}/zsh
 ln -sf "${DOTFILES}/zsh/.zshenv" "${HOME}"
 ln -sf "${DOTFILES}/zsh/.zshrc" "${XDG_CONFIG_HOME}/zsh/.zshrc"
 ln -sf "${DOTFILES}/zsh/aliases.zsh" "${XDG_CONFIG_HOME}/zsh"
+rm -rf "${XDG_CONFIG_HOME}/zsh/configs"
+ln -sf "${DOTFILES}/zsh/configs" "${XDG_CONFIG_HOME}/zsh"
 
 ############
 # zsh-abbr #

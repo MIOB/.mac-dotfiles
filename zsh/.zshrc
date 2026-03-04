@@ -1,6 +1,16 @@
-fpath=("/opt/homebrew/share/zsh/site-functions" "${ZDOTDIR}/external" $fpath)
+fpath=("/opt/homebrew/share/zsh/site-functions" "${ZDOTDIR}/external" "${ZDOTDIR}/completions" $fpath)
 
 source "${XDG_CONFIG_HOME}/zsh/aliases.zsh"
+
+function add_completion() {
+  local tool="$1"
+  local compfile="${ZDOTDIR}/completions/_${tool}"
+  if command -v "${tool}" >/dev/null 2>&1; then
+    if [[ ! -f "$compfile" || "$compfile" -ot "$commands[$tool]" ]]; then
+      "$@" > "${compfile}"
+    fi
+  fi
+}
 
 function () {
   local file

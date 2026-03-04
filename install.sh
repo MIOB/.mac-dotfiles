@@ -17,6 +17,8 @@ ln -sf "${DOTFILES}/zsh/.zshrc" "${XDG_CONFIG_HOME}/zsh/.zshrc"
 ln -sf "${DOTFILES}/zsh/aliases.zsh" "${XDG_CONFIG_HOME}/zsh"
 rm -rf "${XDG_CONFIG_HOME}/zsh/configs"
 ln -sf "${DOTFILES}/zsh/configs" "${XDG_CONFIG_HOME}/zsh"
+rm -rf "${XDG_CONFIG_HOME}/zsh/completions"
+mkdir "${XDG_CONFIG_HOME}/zsh/completions"
 
 ############
 # zsh-abbr #

@@ -26,7 +26,9 @@
       "mcp__jetbrains__search_symbol",
       "mcp__jetbrains__read_file",
       "mcp__jetbrains__search_text",
-      "mcp__jetbrains__search_file"
+      "mcp__jetbrains__search_file",
+      "mcp__plugin_context7_context7__resolve-library-id",
+      "mcp__plugin_context7_context7__query-docs"
     ],
     "defaultMode": "default"
   },

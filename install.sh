@@ -26,13 +26,19 @@ mkdir "${XDG_CONFIG_HOME}/zsh/completions"
 rm -rf "${XDG_CONFIG_HOME}/zsh-abbr"
 ln -sf "${DOTFILES}/zsh-abbr" "${XDG_CONFIG_HOME}"
 
-#########
+##########
 # claude #
-#########
+##########
 mkdir -p "${HOME}/.claude"
 ln -sf "${DOTFILES}/claude/CLAUDE.md" "${HOME}/.claude/CLAUDE.md"
 ln -sf "${DOTFILES}/claude/settings.json" "${HOME}/.claude/settings.json"
 ln -sf "${DOTFILES}/claude/statusline.sh" "${HOME}/.claude/statusline.sh"
+
+###########
+# ideavim #
+###########
+rm -rf "${XDG_CONFIG_HOME}/ideavim"
+ln -sf "${DOTFILES}/ideavim" "${XDG_CONFIG_HOME}"
 
 ########
 # nvim #

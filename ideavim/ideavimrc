@@ -1,0 +1,31 @@
+let mapleader = " "
+
+Plug 'machakann/vim-highlightedyank'
+
+set clipboard+=ideaput
+set clipboard+=unnamed
+set ideajoin
+set idearefactormode=keep
+
+set showcmd
+set incsearch
+set surround
+set commentary
+set ReplaceWithRegister
+set scrolloff=5
+set sidescrolloff=5
+set number
+
+nnoremap <leader><c-r> :action IdeaVim.ReloadVimRc.reload<CR>
+nnoremap <c-t> :action ActivateTerminalToolWindow<CR>
+nnoremap <Leader>=  :action ReformatCode<CR>
+nnoremap <leader>o :action OptimizeImports<CR>
+
+nnoremap <c-r> :action RecentFiles<CR>
+nnoremap <leader>l :action RecentLocations<CR>
+nnoremap <leader>c :action CommentByLineComment<CR>
+nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
+nmap [[ <Action>(MethodUp)
+nmap ]] <Action>(MethodDown)
+
+map U <C-R>

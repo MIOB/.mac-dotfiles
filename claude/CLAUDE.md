@@ -1,4 +1,10 @@
+# Java/Kotlin
+
+Always run test when you adding it.
+
 # Bash
+
+Follow [Google Shell Style Guide](https://google.github.io/styleguide/shellguide.html) 
 
 Prefer to use "safe mode" (e.g., `set -euo pipefail`) in bash scripts that suppose to be executed, do not use it for scripts that suppose to be sourced.
 
@@ -6,7 +12,9 @@ Check bash scripts with shellcheck.
 
 Prefer using explicitly declared local variables.
 
-Use UPPER_CASE for constants and environment variables. Use lower_case for normal shell variables. 
+Use UPPER_CASE for constants and environment variables. Use lower_case for normal shell variables.
+
+Use `#!/usr/bin/env bash` shebang.
 
 # MCP Servers
 

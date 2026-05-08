@@ -32,12 +32,13 @@
     ],
     "defaultMode": "plan"
   },
-  "model": "opus",
+  "model": "opus[1m]",
   "statusLine": {
     "type": "command",
     "command": "~/.mac-dotfiles/claude/statusline.sh"
   },
   "enabledPlugins": {
     "context7@claude-plugins-official": true
-  }
+  },
+  "theme": "light"
 }

@@ -17,6 +17,9 @@ function () {
   for file in "${XDG_CONFIG_HOME}/zsh/configs/"*.zsh; do
     source "${file}"
   done
+  for file in "${XDG_CONFIG_HOME}/zsh/external/"*.zsh; do
+    source "${file}"
+  done
 }
 
 #######################

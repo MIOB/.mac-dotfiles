@@ -38,7 +38,8 @@
     "command": "~/.mac-dotfiles/claude/statusline.sh"
   },
   "enabledPlugins": {
-    "context7@claude-plugins-official": true
+    "context7@claude-plugins-official": true,
+    "github@claude-plugins-official": true
   },
   "theme": "light"
 }

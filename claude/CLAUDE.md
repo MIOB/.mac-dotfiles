@@ -55,3 +55,7 @@ Use other similar tools only if it is not possible to use the JetBrains IDE MCP,
 ### Mandatory - Verify After Writing Code
 
 Use JetBrains MCP `get_file_problems` with errorsOnly=false to check files for warnings. FIX any warnings related to the code changes made. You may ignore unrelated warnings.
+
+## Github
+
+Do not post anything on GitHub unless it is not explicitly asked by the user.

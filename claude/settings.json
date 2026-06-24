@@ -1,7 +1,12 @@
 {
+  "apiKeyHelper": "jbcentral proxy start --ensure-updated --return-key",
   "attribution": {
     "commit": "",
     "pr": ""
+  },
+  "env": {
+    "ENABLE_PROMPT_CACHING_1H": "1",
+    "ENABLE_TOOL_SEARCH": "true"
   },
   "permissions": {
     "allow": [
@@ -27,6 +32,7 @@
       "mcp__jetbrains__read_file",
       "mcp__jetbrains__search_text",
       "mcp__jetbrains__search_file",
+      "mcp__jetbrains__get_database_object_description",
       "mcp__plugin_context7_context7__resolve-library-id",
       "mcp__plugin_context7_context7__query-docs"
     ],
@@ -35,11 +41,10 @@
   "model": "opus[1m]",
   "statusLine": {
     "type": "command",
-    "command": "~/.mac-dotfiles/claude/statusline.sh"
+    "command": "~/.claude/statusline.sh"
   },
   "enabledPlugins": {
-    "context7@claude-plugins-official": true,
-    "github@claude-plugins-official": true
+    "context7@claude-plugins-official": true
   },
   "theme": "light"
 }

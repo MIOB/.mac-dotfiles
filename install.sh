@@ -36,6 +36,12 @@ ln -sf "${DOTFILES}/claude/CLAUDE.md" "${HOME}/.claude/CLAUDE.md"
 ln -sf "${DOTFILES}/claude/settings.json" "${HOME}/.claude/settings.json"
 ln -sf "${DOTFILES}/claude/statusline.sh" "${HOME}/.claude/statusline.sh"
 
+#########
+# codex #
+#########
+mkdir -p "${HOME}/.codex"
+ln -sf "${DOTFILES}/codex/AGENTS.md" "${HOME}/.codex/AGENTS.md"
+
 ###########
 # ideavim #
 ###########
